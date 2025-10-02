@@ -7,10 +7,6 @@
         <dict>
             <key>AutoJoin</key>
             <true/>
-            <key>CaptiveBypass</key>
-            <false/>
-            <key>DisableAssociationMACRandomization</key>
-            <false/>
             <key>EAPClientConfiguration</key>
             <dict>
                 <key>AcceptEAPTypes</key>
@@ -24,24 +20,22 @@
                     <string>wifi.ankarabilim.edu.tr</string>
                 </array>
                 <key>TLSAllowTrustExceptions</key>
-                <true/>
+                <false/>
             </dict>
             <key>EncryptionType</key>
             <string>WPA2</string>
             <key>HIDDEN_NETWORK</key>
-            <false/>
-            <key>IsHotspot</key>
             <false/>
             <key>PayloadDescription</key>
             <string>Ankara Bilim Universitesi Ogrenci WiFi</string>
             <key>PayloadDisplayName</key>
             <string>WiFi (Ogrenci-802.1x)</string>
             <key>PayloadIdentifier</key>
-            <string>com.ankarabilim.wifi.ogrenci.ios</string>
+            <string>com.ankarabilim.wifi.ogrenci</string>
             <key>PayloadType</key>
             <string>com.apple.wifi.managed</string>
             <key>PayloadUUID</key>
-            <string>C3D4E5F6-A7B8-4C5D-9E8F-345678901CDE</string>
+            <string>A1B2C3D4-E5F6-4A5B-8C9D-123456789ABC</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>ProxyType</key>
@@ -53,15 +47,13 @@
     <key>PayloadDisplayName</key>
     <string>Ankara Bilim Ogrenci WiFi</string>
     <key>PayloadIdentifier</key>
-    <string>com.ankarabilim.wifi.ogrenci.ios</string>
+    <string>com.ankarabilim.wifi.ogrenci</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
-    <key>PayloadScope</key>
-    <string>User</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>D4E5F6A7-B8C9-4D5E-9F8A-456789012DEF</string>
+    <string>B2C3D4E5-F6A7-4B5C-9D8E-234567890BCD</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
 </dict>
