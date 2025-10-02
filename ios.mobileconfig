@@ -4,9 +4,14 @@
 <dict>
     <key>PayloadContent</key>
     <array>
+        <!-- WiFi Configuration -->
         <dict>
             <key>AutoJoin</key>
             <true/>
+            <key>CaptiveBypass</key>
+            <false/>
+            <key>DisableAssociationMACRandomization</key>
+            <false/>
             <key>EAPClientConfiguration</key>
             <dict>
                 <key>AcceptEAPTypes</key>
@@ -19,23 +24,29 @@
                 <array>
                     <string>wifi.ankarabilim.edu.tr</string>
                 </array>
-                <key>TLSAllowTrustExceptions</key>
+                <key>TLSCertificateIsRequired</key>
                 <false/>
+                <key>TLSTrustedCertificates</key>
+                <array>
+                    <data>A1B2C3D4-CERT-UUID</data>
+                </array>
             </dict>
             <key>EncryptionType</key>
             <string>WPA2</string>
             <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>IsHotspot</key>
             <false/>
             <key>PayloadDescription</key>
             <string>Ankara Bilim Universitesi Ogrenci WiFi</string>
             <key>PayloadDisplayName</key>
             <string>WiFi (Ogrenci-802.1x)</string>
             <key>PayloadIdentifier</key>
-            <string>com.ankarabilim.wifi.ogrenci</string>
+            <string>com.ankarabilim.wifi.ogrenci.ios</string>
             <key>PayloadType</key>
             <string>com.apple.wifi.managed</string>
             <key>PayloadUUID</key>
-            <string>A1B2C3D4-E5F6-4A5B-8C9D-123456789ABC</string>
+            <string>C3D4E5F6-A7B8-4C5D-9E8F-345678901CDE</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>ProxyType</key>
@@ -43,17 +54,67 @@
             <key>SSID_STR</key>
             <string>Ogrenci-802.1x</string>
         </dict>
+        <!-- Certificate Payload -->
+        <dict>
+            <key>PayloadCertificateFileName</key>
+            <string>AnkaraBilim-wifi.crt</string>
+            <key>PayloadContent</key>
+            <data>
+            MIIFLTCCBBWgAwIBAgIUFgznbilQfAQzXSAoTlmNPxqt1JswDQYJKoZIhvcNAQEL
+            BQAwgaQxCzAJBgNVBAYTAlRSMQ8wDQYDVQQIDAZBbmthcmExDzANBgNVBAcMBkFu
+            a2FyYTElMCMGA1UECgwcQW5rYXJhIEJpbGltIMODwpxuaXZlcnNpdGVzaTEtMCsG
+            CSqGSIb3DQEJARYeYmlsZ2kuaXNsZW1AYW5rYXJhYmlsaW0uZWR1LnRyMR0wGwYD
+            VQQDDBRBbmthcmEgQmlsaW0gV2lmaSBDQTAeFw0yNTEwMDExNTExNDRaFw0zNTA5
+            MjkxNTExNDRaMIGkMQswCQYDVQQGEwJUUjEPMA0GA1UECAwGQW5rYXJhMQ8wDQYD
+            VQQHDAZBbmthcmExJTAjBgNVBAoMHEFua2FyYSBCaWxpbSDDg8Kcbml2ZXJzaXRl
+            c2kxLTArBgkqhkiG9w0BCQEWHmJpbGdpLmlzbGVtQGFua2FyYWJpbGltLmVkdS50
+            cjEdMBsGA1UEAwwUQW5rYXJhIEJpbGltIFdpZmkgQ0EwggEiMA0GCSqGSIb3DQEB
+            AQUAA4IBDwAwggEKAoIBAQDEjOAZqroodUiDWv70XQneTRMPngx9bsbIKDADzzMD
+            DwRWb2R+FZoERm+dE3v11IG+WeLLXF+qzIT/XyAjS6b9s1YAJzhMKDCt3HQNQhFh
+            AcT1Yp7sIHoIaXguGlIWlxk/ERZD17MT22GzlCNgTrjinmE00uJGU7cPSOY6ycF4
+            Ym+WJWb+w86Wr6nOt0weyqTXMczKtWTUO0oFQWiBd661zf1CAfEEkvOrGUHQx+A8
+            bU+OY1neAU45vVMLOP6HJWpsT76NrG1yi2nD5wJGiU6zogkHFxEiaw0L+r+5OaQi
+            ILMy3WWeAAF821Io1XsKGW54+i8jymcUyyM1OCOs0/fxAgMBAAGjggFTMIIBTzAd
+            BgNVHQ4EFgQU2NbbR/xSXXY4eCXuAgSLPD/gmdwwgeQGA1UdIwSB3DCB2YAU2Nbb
+            R/xSXXY4eCXuAgSLPD/gmdyhgaqkgacwgaQxCzAJBgNVBAYTAlRSMQ8wDQYDVQQI
+            DAZBbmthcmExDzANBgNVBAcMBkFua2FyYTElMCMGA1UECgwcQW5rYXJhIEJpbGlt
+            IMODwpxuaXZlcnNpdGVzaTEtMCsGCSqGSIb3DQEJARYeYmlsZ2kuaXNsZW1AYW5r
+            YXJhYmlsaW0uZWR1LnRyMR0wGwYDVQQDDBRBbmthcmEgQmlsaW0gV2lmaSBDQYIU
+            FgznbilQfAQzXSAoTlmNPxqt1JswDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAt
+            MCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0G
+            CSqGSIb3DQEBCwUAA4IBAQB5s+I/aQ3JwkLbbFjwIFQRJ4kkNABU6Ql0/4WQEkmr
+            2kVbHth5BlKaUYzXAVzdETLgbDQEylROuWjTvqfeB2xQNUYLjfmiwZzPRbPHMWeA
+            pSc1Ux6eHzBzMKKEztaT2W5bvxGg7Jma6THKYW+qm8Et8sTiExQ+dikUc9/RPrEh
+            sWwQKSZOorR9wPgn/WV9N7/8+FArVuS15CYXmTV0Q/5Z9QfsxbMYEJyLaus7jTXr
+            hJkASEUILR1bfUxB/4Misod9hOMomqX/nKju6FSseOToaCgau/N+fTVTnWy0kzIt
+            56vf+Pd63NGYjSSqqCH5OxcZLu1CmrkPagZUOEchxsRg
+            </data>
+            <key>PayloadDescription</key>
+            <string>Ankara Bilim WiFi CA Certificate</string>
+            <key>PayloadDisplayName</key>
+            <string>Ankara Bilim WiFi CA</string>
+            <key>PayloadIdentifier</key>
+            <string>com.ankarabilim.wifi.cert</string>
+            <key>PayloadType</key>
+            <string>com.apple.security.root</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-CERT-UUID</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
     </array>
     <key>PayloadDisplayName</key>
     <string>Ankara Bilim Ogrenci WiFi</string>
     <key>PayloadIdentifier</key>
-    <string>com.ankarabilim.wifi.ogrenci</string>
+    <string>com.ankarabilim.wifi.ogrenci.ios</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
+    <key>PayloadScope</key>
+    <string>User</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>B2C3D4E5-F6A7-4B5C-9D8E-234567890BCD</string>
+    <string>D4E5F6A7-B8C9-4D5E-9F8A-456789012DEF</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
 </dict>
