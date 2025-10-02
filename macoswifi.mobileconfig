@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>AutoJoin</key>
+            <true/>
+            <key>EAPClientConfiguration</key>
+            <dict>
+                <key>AcceptEAPTypes</key>
+                <array>
+                    <integer>21</integer>
+                </array>
+                <key>TTLSInnerAuthentication</key>
+                <string>PAP</string>
+                <key>TLSTrustedServerNames</key>
+                <array>
+                    <string>wifi.ankarabilim.edu.tr</string>
+                </array>
+                <key>TLSAllowTrustExceptions</key>
+                <false/>
+            </dict>
+            <key>EncryptionType</key>
+            <string>WPA2</string>
+            <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>PayloadDescription</key>
+            <string>Ankara Bilim Universitesi Ogrenci WiFi</string>
+            <key>PayloadDisplayName</key>
+            <string>WiFi (Ogrenci-802.1x)</string>
+            <key>PayloadIdentifier</key>
+            <string>com.ankarabilim.wifi.ogrenci</string>
+            <key>PayloadType</key>
+            <string>com.apple.wifi.managed</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-4A5B-8C9D-123456789ABC</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>ProxyType</key>
+            <string>None</string>
+            <key>SSID_STR</key>
+            <string>Ogrenci-802.1x</string>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Ankara Bilim Ogrenci WiFi</string>
+    <key>PayloadIdentifier</key>
+    <string>com.ankarabilim.wifi.ogrenci</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>B2C3D4E5-F6A7-4B5C-9D8E-234567890BCD</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
