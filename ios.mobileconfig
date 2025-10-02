@@ -24,7 +24,7 @@
                     <string>wifi.ankarabilim.edu.tr</string>
                 </array>
                 <key>TLSAllowTrustExceptions</key>
-                <false/>
+                <true/>
             </dict>
             <key>EncryptionType</key>
             <string>WPA2</string>
